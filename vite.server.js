@@ -1,14 +1,3 @@
-# Vite & Webpack
-
-Use `vite` during `development` & build `production` with `webpack`
-
-Please checkout [webpack.config](./webpack.config.js) & [vite.server.js](./vite.server.js)
-
-## Setting Up the Dev Server [Express]
-
-vite.server.js
-
-```javascript
 const express = require("express");
 const { createServer: createViteServer } = require("vite");
 const os = require("os");
@@ -82,27 +71,3 @@ async function createServer() {
 	});
 }
 createServer();
-```
-
-## Building for Production
-
-webpack.config.js
-
-```
-    //  your webpack.config.js
-
-```
-
-## Final
-
-Our scripts in package.json will look like this:
-
-```bash
-{
-  "scripts": {
-    "dev": "node vite.server.js",
-    "build":"webpack --mode production"
-  }
-}
-
-```
